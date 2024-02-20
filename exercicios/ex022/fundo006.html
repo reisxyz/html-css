@@ -8,16 +8,19 @@
 
     body{
       height: 100vh;
-      background-color: black;
-      background-image: url('images/wallpaper002.jpg');
-      background-position:  center center;
-      background-repeat: no-repeat;
-      background-size: cover;
+
+      background: black url('images/wallpaper002.jpg') center center/cover no-repeat fixed;
+     
     }
+
+    /* Shorthand - Background
+    color > image > position/ [size] > repeat > attachment
+    */
+    
 
     main{
       background-color: white;
-      width: 400px;
+      max-width: 700px;
       padding: 10px;
       margin: auto;
       border: 2px solid darkblue;
