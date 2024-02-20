@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+
+:root{
+  --cor_01: #FF33AA;
+  --cor_02: #F763BA;
+  --cor_03: #C476A4; 
+  --cor_04: #917485;
+  --cor_05: #5E4B56;
+
+  --fonte_padrao: 'Arial', 'Helvetica', sans-serif;
+  --fonte_destaque: "Protest Strike", sans-serif;
+  --fonte-titulo: "Anta", sans-serif;
+}
+
+*{
+  margin: 0;
+}
+
+
+body{
+  background-color: var(--cor_03);
+}
+
+header{
+  background-image: linear-gradient(to bottom, var(--cor_04), var(--cor_05));
+  padding: 14px;
+  color: white;
+}
+
+header > h1{
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  margin-bottom: 10px;
+}
+
+header > h2{
+  text-align: center;
+  font-family: var(--fonte_padrao);
+  font-weight: normal;
+  font-size: 20px;
+}
+
+nav{
+  text-align: right;
+  background-color: var(--cor_05);
+}
+
+
+nav a{
+  text-decoration: none;
+  color:white;
+  padding: 15px;
+}
+
+main{
+  background-color: white;
+}
+
+.banner img{
+    max-height: 120px;
+    width: 720px;
+    display: block;
+    margin: auto;
+}

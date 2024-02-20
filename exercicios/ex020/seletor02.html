@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes</title>
+  <style>
+    
+    body{
+      font: normal 1em Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: red;
+    }
+
+    a:visited{
+      color: darkred
+    }
+    
+    a:hover{
+      text-decoration: underline;
+      color: palevioletred
+    }
+
+    .especial:hover{
+      color: white;
+      background-color: black;
+      text-decoration: none;
+    }
+
+    .especial::before{
+      content: '>>';
+      font-weight: lighter;
+    }
+
+    .especial::after{
+      content: '<<';
+      font-weight: lighter;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Personalizando um link</h1>
+  <p>
+    Para entrar no meu instagram acesse
+    <a href="https://www.instagram.com/reis_xys" target="_blank" rel="nofollow">Este Link</a>
+  </p>
+  <p>
+    Se quiser conhecer mais sobre Qiyana acesse o <a href="https://www.youtube.com/@qiyana001" target="_blank" rel="nofollow">Canal do 001</a>
+  </p>
+  <p>
+    Para acompanhar os cursos, acesse o <a class="especial" href="https://www.youtube.com/@cursoemvideo" target="_blank" rel="nofollow">Canal do CeV</a>
+  </p>
+
+</body>
+</html>
